@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */; };
 		9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52022E148CE00FBA6EC /* Assets.xcassets */; };
 		9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */; };
+		9DEF1A0B22E14CA100927D04 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF1A0A22E14CA100927D04 /* star.png */; };
 		FADA5FA8D510AE5C06F1B8A4 /* Pods_AutosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		9D06A52022E148CE00FBA6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D06A52322E148CE00FBA6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D06A52522E148CE00FBA6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEF1A0A22E14CA100927D04 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosApp.release.xcconfig"; path = "Target Support Files/Pods-AutosApp/Pods-AutosApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				8FF0E38B386A5051575D51AA /* Pods-AutosApp.debug.xcconfig */,
 				E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 		9D06A51522E148CD00FBA6EC /* AutosApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DEF1A0922E14C8800927D04 /* images */,
 				9D06A51622E148CD00FBA6EC /* AppDelegate.swift */,
 				9D06A51822E148CD00FBA6EC /* ViewController.swift */,
 				9D06A51A22E148CD00FBA6EC /* Main.storyboard */,
@@ -82,6 +84,14 @@
 				9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */,
 			);
 			path = AutosApp;
+			sourceTree = "<group>";
+		};
+		9DEF1A0922E14C8800927D04 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9DEF1A0A22E14CA100927D04 /* star.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		B276BA447582EF22195000B5 /* Frameworks */ = {
@@ -153,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */,
+				9DEF1A0B22E14CA100927D04 /* star.png in Resources */,
 				9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */,
 				9D06A51C22E148CD00FBA6EC /* Main.storyboard in Resources */,
 			);
