@@ -13,9 +13,11 @@
 		9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */; };
 		9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52022E148CE00FBA6EC /* Assets.xcassets */; };
 		9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */; };
+		FADA5FA8D510AE5C06F1B8A4 /* Pods_AutosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FF0E38B386A5051575D51AA /* Pods-AutosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosApp.debug.xcconfig"; path = "Target Support Files/Pods-AutosApp/Pods-AutosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D06A51322E148CD00FBA6EC /* AutosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D06A51622E148CD00FBA6EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D06A51822E148CD00FBA6EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9D06A52022E148CE00FBA6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D06A52322E148CE00FBA6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D06A52522E148CE00FBA6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosApp.release.xcconfig"; path = "Target Support Files/Pods-AutosApp/Pods-AutosApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADA5FA8D510AE5C06F1B8A4 /* Pods_AutosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		909450DEAD43D9572F4BD28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FF0E38B386A5051575D51AA /* Pods-AutosApp.debug.xcconfig */,
+				E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D06A50A22E148CD00FBA6EC = {
 			isa = PBXGroup;
 			children = (
 				9D06A51522E148CD00FBA6EC /* AutosApp */,
 				9D06A51422E148CD00FBA6EC /* Products */,
+				909450DEAD43D9572F4BD28C /* Pods */,
+				B276BA447582EF22195000B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = AutosApp;
 			sourceTree = "<group>";
 		};
+		B276BA447582EF22195000B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D06A52822E148CE00FBA6EC /* Build configuration list for PBXNativeTarget "AutosApp" */;
 			buildPhases = (
+				70299B9F6858CEDA2EDC3775 /* [CP] Check Pods Manifest.lock */,
 				9D06A50F22E148CD00FBA6EC /* Sources */,
 				9D06A51022E148CD00FBA6EC /* Frameworks */,
 				9D06A51122E148CD00FBA6EC /* Resources */,
+				93C6A502A9A889F85D4B31B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70299B9F6858CEDA2EDC3775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutosApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93C6A502A9A889F85D4B31B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutosApp/Pods-AutosApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutosApp/Pods-AutosApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutosApp/Pods-AutosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D06A50F22E148CD00FBA6EC /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		9D06A52922E148CE00FBA6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF0E38B386A5051575D51AA /* Pods-AutosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +371,7 @@
 		};
 		9D06A52A22E148CE00FBA6EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
