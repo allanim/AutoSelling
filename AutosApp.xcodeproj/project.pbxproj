@@ -13,7 +13,13 @@
 		9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */; };
 		9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52022E148CE00FBA6EC /* Assets.xcassets */; };
 		9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */; };
+		9D94FA0622E29B7F008B644C /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* SigninController.swift */; };
 		9DEF1A0B22E14CA100927D04 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF1A0A22E14CA100927D04 /* star.png */; };
+		9DEF1A0D22E1556400927D04 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF1A0C22E1556400927D04 /* logo.png */; };
+		9DF802F122E926C800DEE2B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F022E926C800DEE2B2 /* User.swift */; };
+		9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F222E9292900DEE2B2 /* UserInfo.swift */; };
+		9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F422E930E300DEE2B2 /* VehicleModels.swift */; };
+		9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F622E9314400DEE2B2 /* Vehicle.swift */; };
 		FADA5FA8D510AE5C06F1B8A4 /* Pods_AutosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +33,13 @@
 		9D06A52022E148CE00FBA6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D06A52322E148CE00FBA6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D06A52522E148CE00FBA6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D94FA0522E29B7F008B644C /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
 		9DEF1A0A22E14CA100927D04 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		9DEF1A0C22E1556400927D04 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9DF802F022E926C800DEE2B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9DF802F222E9292900DEE2B2 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		9DF802F422E930E300DEE2B2 /* VehicleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModels.swift; sourceTree = "<group>"; };
+		9DF802F622E9314400DEE2B2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosApp.release.xcconfig"; path = "Target Support Files/Pods-AutosApp/Pods-AutosApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +86,8 @@
 		9D06A51522E148CD00FBA6EC /* AutosApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DF802F822EA7FCF00DEE2B2 /* Entities */,
+				9DF802EF22E9258A00DEE2B2 /* models */,
 				9DEF1A0922E14C8800927D04 /* images */,
 				9D06A51622E148CD00FBA6EC /* AppDelegate.swift */,
 				9D06A51822E148CD00FBA6EC /* ViewController.swift */,
@@ -82,6 +96,7 @@
 				9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */,
 				9D06A52522E148CE00FBA6EC /* Info.plist */,
 				9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */,
+				9D94FA0522E29B7F008B644C /* SigninController.swift */,
 			);
 			path = AutosApp;
 			sourceTree = "<group>";
@@ -89,9 +104,28 @@
 		9DEF1A0922E14C8800927D04 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9DEF1A0C22E1556400927D04 /* logo.png */,
 				9DEF1A0A22E14CA100927D04 /* star.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		9DF802EF22E9258A00DEE2B2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9DF802F022E926C800DEE2B2 /* User.swift */,
+				9DF802F222E9292900DEE2B2 /* UserInfo.swift */,
+				9DF802F422E930E300DEE2B2 /* VehicleModels.swift */,
+				9DF802F622E9314400DEE2B2 /* Vehicle.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		9DF802F822EA7FCF00DEE2B2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		B276BA447582EF22195000B5 /* Frameworks */ = {
@@ -164,6 +198,7 @@
 			files = (
 				9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */,
 				9DEF1A0B22E14CA100927D04 /* star.png in Resources */,
+				9DEF1A0D22E1556400927D04 /* logo.png in Resources */,
 				9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */,
 				9D06A51C22E148CD00FBA6EC /* Main.storyboard in Resources */,
 			);
@@ -218,8 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */,
 				9D06A51922E148CD00FBA6EC /* ViewController.swift in Sources */,
+				9D94FA0622E29B7F008B644C /* SigninController.swift in Sources */,
 				9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */,
+				9DF802F122E926C800DEE2B2 /* User.swift in Sources */,
+				9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */,
+				9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */,
 				9D06A51722E148CD00FBA6EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2MGZ3HYXY;
 				INFOPLIST_FILE = AutosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2MGZ3HYXY;
 				INFOPLIST_FILE = AutosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

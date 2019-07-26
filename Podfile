@@ -9,6 +9,15 @@ target 'AutosApp' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
-  pod 'TextFieldEffects'
+  pod 'RealmSwift'
   
+  pod 'TextFieldEffects'
+  pod 'TransitionButton'
+  
+#  pod 'DZNEmptyDataSet'
+#  pod 'MGSwipeTableCell'
+#  pod 'SCLAlertView'
+#  pod 'WYMaterialButton'
+#  pod 'CircleBar'
+
 end
