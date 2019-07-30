@@ -20,19 +20,22 @@ struct Vehicle {
     var maker: String
     var model: String
     var year: Int
-    var priceMin: Double
-    var priceMax: Double
+    var price: Double
+    var kilometers: Int
+    
+    var drive: Drive
     var transmission: Transmission
     var exteriorColor: String
-    var kilometers: Int
     var fuelType: String
+    var numberOfDoors: Doors
     
     var images: [String]
     
-    var phoneNumber: String
+    var phone: String
     var email: String
+    var name: String
     
-    var countComment: Int
+    var countOfUnreadComments: Int
     
 }
 
@@ -60,4 +63,19 @@ enum Transmission: String {
     case ANY = "Any"
     case MANUAL = "Manual"
     case AUTOMATIC = "Automatic"
+}
+
+enum Drive: String {
+    case FWD = "FWD"
+    case RWD = "RWD"
+    case AWD = "AWD"
+    case x4 = "4x4"
+}
+
+enum Doors: String {
+    case D2 = "2 Doors"
+    case D3 = "3 Doors"
+    case D4 = "4 Doors"
+    case D5 = "5 Doors"
+    case Dx = "Other"
 }
