@@ -13,10 +13,8 @@
 		9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */; };
 		9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52022E148CE00FBA6EC /* Assets.xcassets */; };
 		9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */; };
-		9D1CAA1E22EBC08200180999 /* chevron-sign-to-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1CAA1D22EBC08200180999 /* chevron-sign-to-right.png */; };
 		9D1CAA2022EBC30300180999 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1CAA1F22EBC30300180999 /* delete.png */; };
 		9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E4BB22EB7F9500CA81BB /* Comment.swift */; };
-		9D22E4BE22EB956000CA81BB /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4BD22EB955F00CA81BB /* button.png */; };
 		9D22E4C622EBBBFF00CA81BB /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C022EBBBA000CA81BB /* SF-Pro-Display-Bold.otf */; };
 		9D22E4C722EBBBFF00CA81BB /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C322EBBBA100CA81BB /* SF-Pro-Display-Regular.otf */; };
 		9D22E4C822EBBBFF00CA81BB /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C222EBBBA100CA81BB /* SF-Pro-Rounded-Bold.otf */; };
@@ -49,10 +47,8 @@
 		9D06A52022E148CE00FBA6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D06A52322E148CE00FBA6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D06A52522E148CE00FBA6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D1CAA1D22EBC08200180999 /* chevron-sign-to-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chevron-sign-to-right.png"; sourceTree = "<group>"; };
 		9D1CAA1F22EBC30300180999 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		9D22E4BB22EB7F9500CA81BB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		9D22E4BD22EB955F00CA81BB /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		9D22E4C022EBBBA000CA81BB /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		9D22E4C122EBBBA100CA81BB /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C222EBBBA100CA81BB /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
@@ -159,8 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				9D1CAA1F22EBC30300180999 /* delete.png */,
-				9D1CAA1D22EBC08200180999 /* chevron-sign-to-right.png */,
-				9D22E4BD22EB955F00CA81BB /* button.png */,
 				9DEF1A0C22E1556400927D04 /* logo.png */,
 				9DEF1A0A22E14CA100927D04 /* star.png */,
 				9D89988F22F107E000F424BA /* home-32.png */,
@@ -263,13 +257,11 @@
 				9D89989022F107E000F424BA /* home-32.png in Resources */,
 				9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */,
 				9D22E4C922EBBBFF00CA81BB /* SF-Pro-Rounded-Regular.otf in Resources */,
-				9D22E4BE22EB956000CA81BB /* button.png in Resources */,
 				9DEB3AD022F109CF00B3ED72 /* info-32.png in Resources */,
 				9D22E4C722EBBBFF00CA81BB /* SF-Pro-Display-Regular.otf in Resources */,
 				9DEB3ACE22F109CF00B3ED72 /* car-32.png in Resources */,
 				9D1CAA2022EBC30300180999 /* delete.png in Resources */,
 				9DEB3ACF22F109CF00B3ED72 /* search-32.png in Resources */,
-				9D1CAA1E22EBC08200180999 /* chevron-sign-to-right.png in Resources */,
 				9DEF1A0B22E14CA100927D04 /* star.png in Resources */,
 				9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */,
 				9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */,
