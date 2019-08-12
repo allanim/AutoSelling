@@ -45,6 +45,8 @@ public extension UIColor {
     
     // Autos
     static var shadow: UIColor { return UIColor(hexString: "#E7EAF0") }
+    static var line: UIColor { return UIColor(hexString: "#727C8E") }
+    
     
     // MARK: - Flat UI Colors (http://www.flatuicolors.com)
     static var turquoise: UIColor { return UIColor(hexString: "#1abc9c") }

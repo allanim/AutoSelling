@@ -25,6 +25,11 @@
 		9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89988622EBF8DC00F424BA /* UIColor.swift */; };
 		9D89989022F107E000F424BA /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D89988F22F107E000F424BA /* home-32.png */; };
 		9D94FA0622E29B7F008B644C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* LoginController.swift */; };
+		9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7193922FCEFC400C2F6C8 /* LineButton.swift */; };
+		9DB7193F22FCF67000C2F6C8 /* change-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193B22FCF66F00C2F6C8 /* change-password.png */; };
+		9DB7194022FCF67000C2F6C8 /* sell-my-autos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193C22FCF66F00C2F6C8 /* sell-my-autos.png */; };
+		9DB7194122FCF67000C2F6C8 /* my-saved-autos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193D22FCF66F00C2F6C8 /* my-saved-autos.png */; };
+		9DB7194222FCF67000C2F6C8 /* edit-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193E22FCF67000C2F6C8 /* edit-profile.png */; };
 		9DEB3ACE22F109CF00B3ED72 /* car-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB3ACB22F109CF00B3ED72 /* car-32.png */; };
 		9DEB3ACF22F109CF00B3ED72 /* search-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB3ACC22F109CF00B3ED72 /* search-32.png */; };
 		9DEB3AD022F109CF00B3ED72 /* info-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB3ACD22F109CF00B3ED72 /* info-32.png */; };
@@ -59,6 +64,11 @@
 		9D89988622EBF8DC00F424BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9D89988F22F107E000F424BA /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 		9D94FA0522E29B7F008B644C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9DB7193922FCEFC400C2F6C8 /* LineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
+		9DB7193B22FCF66F00C2F6C8 /* change-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "change-password.png"; sourceTree = "<group>"; };
+		9DB7193C22FCF66F00C2F6C8 /* sell-my-autos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sell-my-autos.png"; sourceTree = "<group>"; };
+		9DB7193D22FCF66F00C2F6C8 /* my-saved-autos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-saved-autos.png"; sourceTree = "<group>"; };
+		9DB7193E22FCF67000C2F6C8 /* edit-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-profile.png"; sourceTree = "<group>"; };
 		9DEB3ACB22F109CF00B3ED72 /* car-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-32.png"; sourceTree = "<group>"; };
 		9DEB3ACC22F109CF00B3ED72 /* search-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-32.png"; sourceTree = "<group>"; };
 		9DEB3ACD22F109CF00B3ED72 /* info-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-32.png"; sourceTree = "<group>"; };
@@ -154,6 +164,10 @@
 		9DEF1A0922E14C8800927D04 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9DB7193B22FCF66F00C2F6C8 /* change-password.png */,
+				9DB7193E22FCF67000C2F6C8 /* edit-profile.png */,
+				9DB7193D22FCF66F00C2F6C8 /* my-saved-autos.png */,
+				9DB7193C22FCF66F00C2F6C8 /* sell-my-autos.png */,
 				9D1CAA1F22EBC30300180999 /* delete.png */,
 				9DEF1A0C22E1556400927D04 /* logo.png */,
 				9DEF1A0A22E14CA100927D04 /* star.png */,
@@ -182,6 +196,7 @@
 			children = (
 				9D89988622EBF8DC00F424BA /* UIColor.swift */,
 				9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */,
+				9DB7193922FCEFC400C2F6C8 /* LineButton.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -258,17 +273,21 @@
 				9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */,
 				9D22E4C922EBBBFF00CA81BB /* SF-Pro-Rounded-Regular.otf in Resources */,
 				9DEB3AD022F109CF00B3ED72 /* info-32.png in Resources */,
+				9DB7194122FCF67000C2F6C8 /* my-saved-autos.png in Resources */,
 				9D22E4C722EBBBFF00CA81BB /* SF-Pro-Display-Regular.otf in Resources */,
 				9DEB3ACE22F109CF00B3ED72 /* car-32.png in Resources */,
 				9D1CAA2022EBC30300180999 /* delete.png in Resources */,
 				9DEB3ACF22F109CF00B3ED72 /* search-32.png in Resources */,
 				9DEF1A0B22E14CA100927D04 /* star.png in Resources */,
 				9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */,
+				9DB7194222FCF67000C2F6C8 /* edit-profile.png in Resources */,
 				9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */,
 				9DEF1A0D22E1556400927D04 /* logo.png in Resources */,
 				9D22E4C622EBBBFF00CA81BB /* SF-Pro-Display-Bold.otf in Resources */,
 				9D22E4C822EBBBFF00CA81BB /* SF-Pro-Rounded-Bold.otf in Resources */,
 				9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */,
+				9DB7193F22FCF67000C2F6C8 /* change-password.png in Resources */,
+				9DB7194022FCF67000C2F6C8 /* sell-my-autos.png in Resources */,
 				9D06A51C22E148CD00FBA6EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +349,7 @@
 				9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */,
 				9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */,
 				9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */,
+				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,
 				9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */,
 				9D06A51722E148CD00FBA6EC /* AppDelegate.swift in Sources */,
 				9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */,
