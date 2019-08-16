@@ -13,6 +13,8 @@
 		9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */; };
 		9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52022E148CE00FBA6EC /* Assets.xcassets */; };
 		9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */; };
+		9D1C95B723023FE300C45C49 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1C95B623023FE300C45C49 /* SignupViewController.swift */; };
+		9D1C95BB230380BC00C45C49 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1C95BA230380BC00C45C49 /* TransitionButton.swift */; };
 		9D1CAA2022EBC30300180999 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1CAA1F22EBC30300180999 /* delete.png */; };
 		9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E4BB22EB7F9500CA81BB /* Comment.swift */; };
 		9D22E4C622EBBBFF00CA81BB /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C022EBBBA000CA81BB /* SF-Pro-Display-Bold.otf */; };
@@ -21,10 +23,12 @@
 		9D22E4C922EBBBFF00CA81BB /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C122EBBBA100CA81BB /* SF-Pro-Rounded-Regular.otf */; };
 		9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */; };
 		9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */; };
+		9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D458D222302356F003AA632 /* MyAutosViewConroller.swift */; };
+		9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D458D24230237BB003AA632 /* GoogleService-Info.plist */; };
 		9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */; };
 		9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89988622EBF8DC00F424BA /* UIColor.swift */; };
 		9D89989022F107E000F424BA /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D89988F22F107E000F424BA /* home-32.png */; };
-		9D94FA0622E29B7F008B644C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* LoginController.swift */; };
+		9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* LoginViewController.swift */; };
 		9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7193922FCEFC400C2F6C8 /* LineButton.swift */; };
 		9DB7193F22FCF67000C2F6C8 /* change-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193B22FCF66F00C2F6C8 /* change-password.png */; };
 		9DB7194022FCF67000C2F6C8 /* sell-my-autos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193C22FCF66F00C2F6C8 /* sell-my-autos.png */; };
@@ -52,6 +56,8 @@
 		9D06A52022E148CE00FBA6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D06A52322E148CE00FBA6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D06A52522E148CE00FBA6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D1C95B623023FE300C45C49 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		9D1C95BA230380BC00C45C49 /* TransitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionButton.swift; sourceTree = "<group>"; };
 		9D1CAA1F22EBC30300180999 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		9D22E4BB22EB7F9500CA81BB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		9D22E4C022EBBBA000CA81BB /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
@@ -60,10 +66,12 @@
 		9D22E4C322EBBBA100CA81BB /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		9D458D222302356F003AA632 /* MyAutosViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutosViewConroller.swift; sourceTree = "<group>"; };
+		9D458D24230237BB003AA632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		9D89988622EBF8DC00F424BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9D89988F22F107E000F424BA /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
-		9D94FA0522E29B7F008B644C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9D94FA0522E29B7F008B644C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9DB7193922FCEFC400C2F6C8 /* LineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
 		9DB7193B22FCF66F00C2F6C8 /* change-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "change-password.png"; sourceTree = "<group>"; };
 		9DB7193C22FCF66F00C2F6C8 /* sell-my-autos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sell-my-autos.png"; sourceTree = "<group>"; };
@@ -134,6 +142,7 @@
 				9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */,
 				9D06A52022E148CE00FBA6EC /* Assets.xcassets */,
 				9D06A52522E148CE00FBA6EC /* Info.plist */,
+				9D458D24230237BB003AA632 /* GoogleService-Info.plist */,
 				9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */,
 			);
 			path = AutosApp;
@@ -156,7 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				9D06A51822E148CD00FBA6EC /* ViewController.swift */,
-				9D94FA0522E29B7F008B644C /* LoginController.swift */,
+				9D94FA0522E29B7F008B644C /* LoginViewController.swift */,
+				9D1C95B623023FE300C45C49 /* SignupViewController.swift */,
+				9D458D222302356F003AA632 /* MyAutosViewConroller.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 				9D89988622EBF8DC00F424BA /* UIColor.swift */,
 				9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */,
 				9DB7193922FCEFC400C2F6C8 /* LineButton.swift */,
+				9D1C95BA230380BC00C45C49 /* TransitionButton.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 				9DB7193F22FCF67000C2F6C8 /* change-password.png in Resources */,
 				9DB7194022FCF67000C2F6C8 /* sell-my-autos.png in Resources */,
 				9D06A51C22E148CD00FBA6EC /* Main.storyboard in Resources */,
+				9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +355,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */,
+				9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */,
 				9D06A51922E148CD00FBA6EC /* ViewController.swift in Sources */,
-				9D94FA0622E29B7F008B644C /* LoginController.swift in Sources */,
+				9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */,
 				9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */,
 				9DF802F122E926C800DEE2B2 /* User.swift in Sources */,
 				9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */,
 				9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */,
+				9D1C95B723023FE300C45C49 /* SignupViewController.swift in Sources */,
+				9D1C95BB230380BC00C45C49 /* TransitionButton.swift in Sources */,
 				9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */,
 				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,
 				9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */,
@@ -500,7 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y2MGZ3HYXY;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AutosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y2MGZ3HYXY;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AutosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

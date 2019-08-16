@@ -18,6 +18,12 @@ struct UserInfo {
     let firstName: String
     let lastName: String
     
+    var fullName: String {
+        get {
+            return firstName + " " + lastName
+        }
+    }
+    
     init(email: String, firstName: String, lastName: String, key: String = "") {
         self.ref = nil
         self.key = key

@@ -6,6 +6,7 @@ target 'AutosApp' do
   use_frameworks!
 
   # Pods for AutosApp
+  pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
@@ -13,6 +14,7 @@ target 'AutosApp' do
   
   pod 'TextFieldEffects'
   pod 'TransitionButton'
+  pod 'LGButton'
   
 #  pod 'DZNEmptyDataSet'
 #  pod 'MGSwipeTableCell'
