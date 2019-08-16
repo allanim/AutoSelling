@@ -23,6 +23,7 @@
 		9D22E4C922EBBBFF00CA81BB /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C122EBBBA100CA81BB /* SF-Pro-Rounded-Regular.otf */; };
 		9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */; };
 		9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */; };
+		9D3CED8023076AF60093502B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CED7F23076AF60093502B /* Key.swift */; };
 		9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D458D222302356F003AA632 /* MyAutosViewConroller.swift */; };
 		9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D458D24230237BB003AA632 /* GoogleService-Info.plist */; };
 		9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */; };
@@ -66,6 +67,7 @@
 		9D22E4C322EBBBA100CA81BB /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		9D3CED7F23076AF60093502B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		9D458D222302356F003AA632 /* MyAutosViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutosViewConroller.swift; sourceTree = "<group>"; };
 		9D458D24230237BB003AA632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				9D06A52522E148CE00FBA6EC /* Info.plist */,
 				9D458D24230237BB003AA632 /* GoogleService-Info.plist */,
 				9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */,
+				9D3CED7F23076AF60093502B /* Key.swift */,
 			);
 			path = AutosApp;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */,
 				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,
 				9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */,
+				9D3CED8023076AF60093502B /* Key.swift in Sources */,
 				9D06A51722E148CD00FBA6EC /* AppDelegate.swift in Sources */,
 				9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */,
 			);
