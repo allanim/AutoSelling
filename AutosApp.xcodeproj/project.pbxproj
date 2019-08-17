@@ -29,6 +29,9 @@
 		9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */; };
 		9D69DE07230781DB004620C3 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE06230781DB004620C3 /* EditProfileViewController.swift */; };
 		9D69DE09230859B7004620C3 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE08230859B7004620C3 /* ChangePasswordViewController.swift */; };
+		9D69DE0B23088952004620C3 /* car-list.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D69DE0A23088952004620C3 /* car-list.json */; };
+		9D69DE0D230890AD004620C3 /* VehicleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE0C230890AD004620C3 /* VehicleMaker.swift */; };
+		9D69DE1023089443004620C3 /* VehicleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE0F23089443004620C3 /* VehicleUtils.swift */; };
 		9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89988622EBF8DC00F424BA /* UIColor.swift */; };
 		9D89989022F107E000F424BA /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D89988F22F107E000F424BA /* home-32.png */; };
 		9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* LoginViewController.swift */; };
@@ -44,7 +47,7 @@
 		9DEF1A0D22E1556400927D04 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF1A0C22E1556400927D04 /* logo.png */; };
 		9DF802F122E926C800DEE2B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F022E926C800DEE2B2 /* User.swift */; };
 		9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F222E9292900DEE2B2 /* UserInfo.swift */; };
-		9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F422E930E300DEE2B2 /* VehicleModels.swift */; };
+		9DF802F522E930E300DEE2B2 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F422E930E300DEE2B2 /* VehicleModel.swift */; };
 		9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF802F622E9314400DEE2B2 /* Vehicle.swift */; };
 		FADA5FA8D510AE5C06F1B8A4 /* Pods_AutosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +78,9 @@
 		9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		9D69DE06230781DB004620C3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		9D69DE08230859B7004620C3 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		9D69DE0A23088952004620C3 /* car-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "car-list.json"; sourceTree = "<group>"; };
+		9D69DE0C230890AD004620C3 /* VehicleMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMaker.swift; sourceTree = "<group>"; };
+		9D69DE0F23089443004620C3 /* VehicleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleUtils.swift; sourceTree = "<group>"; };
 		9D89988622EBF8DC00F424BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9D89988F22F107E000F424BA /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 		9D94FA0522E29B7F008B644C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +96,7 @@
 		9DEF1A0C22E1556400927D04 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9DF802F022E926C800DEE2B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9DF802F222E9292900DEE2B2 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		9DF802F422E930E300DEE2B2 /* VehicleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModels.swift; sourceTree = "<group>"; };
+		9DF802F422E930E300DEE2B2 /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
 		9DF802F622E9314400DEE2B2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		DF9D96ED2FDDAC117C9E9A9B /* Pods_AutosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68D9E975047AB6C84FEA21F /* Pods-AutosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosApp.release.xcconfig"; path = "Target Support Files/Pods-AutosApp/Pods-AutosApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 		9D06A51522E148CD00FBA6EC /* AutosApp */ = {
 			isa = PBXGroup;
 			children = (
+				9D69DE0E2308942C004620C3 /* utils */,
 				9D22E4BF22EBBB9600CA81BB /* fonts */,
 				9DEF1A0922E14C8800927D04 /* images */,
 				9DF802F822EA7FCF00DEE2B2 /* extensions */,
@@ -147,6 +154,7 @@
 				9D06A51A22E148CD00FBA6EC /* Main.storyboard */,
 				9D06A52222E148CE00FBA6EC /* LaunchScreen.storyboard */,
 				9D06A52022E148CE00FBA6EC /* Assets.xcassets */,
+				9D69DE0A23088952004620C3 /* car-list.json */,
 				9D06A52522E148CE00FBA6EC /* Info.plist */,
 				9D458D24230237BB003AA632 /* GoogleService-Info.plist */,
 				9D06A51D22E148CD00FBA6EC /* AutosApp.xcdatamodeld */,
@@ -166,6 +174,14 @@
 				9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		9D69DE0E2308942C004620C3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D69DE0F23089443004620C3 /* VehicleUtils.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		9D89988C22EFD59C00F424BA /* controllers */ = {
@@ -204,9 +220,10 @@
 			children = (
 				9DF802F022E926C800DEE2B2 /* User.swift */,
 				9DF802F222E9292900DEE2B2 /* UserInfo.swift */,
-				9DF802F422E930E300DEE2B2 /* VehicleModels.swift */,
 				9DF802F622E9314400DEE2B2 /* Vehicle.swift */,
 				9D22E4BB22EB7F9500CA81BB /* Comment.swift */,
+				9D69DE0C230890AD004620C3 /* VehicleMaker.swift */,
+				9DF802F422E930E300DEE2B2 /* VehicleModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -308,6 +325,7 @@
 				9D22E4C822EBBBFF00CA81BB /* SF-Pro-Rounded-Bold.otf in Resources */,
 				9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */,
 				9DB7193F22FCF67000C2F6C8 /* change-password.png in Resources */,
+				9D69DE0B23088952004620C3 /* car-list.json in Resources */,
 				9DB7194022FCF67000C2F6C8 /* sell-my-autos.png in Resources */,
 				9D06A51C22E148CD00FBA6EC /* Main.storyboard in Resources */,
 				9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */,
@@ -369,16 +387,18 @@
 				9D69DE09230859B7004620C3 /* ChangePasswordViewController.swift in Sources */,
 				9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */,
 				9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */,
+				9D69DE0D230890AD004620C3 /* VehicleMaker.swift in Sources */,
 				9DF802F122E926C800DEE2B2 /* User.swift in Sources */,
 				9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */,
 				9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */,
 				9D1C95B723023FE300C45C49 /* SignupViewController.swift in Sources */,
 				9D1C95BB230380BC00C45C49 /* TransitionButton.swift in Sources */,
 				9D69DE07230781DB004620C3 /* EditProfileViewController.swift in Sources */,
-				9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */,
+				9DF802F522E930E300DEE2B2 /* VehicleModel.swift in Sources */,
 				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,
 				9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */,
 				9D3CED8023076AF60093502B /* Key.swift in Sources */,
+				9D69DE1023089443004620C3 /* VehicleUtils.swift in Sources */,
 				9D06A51722E148CD00FBA6EC /* AppDelegate.swift in Sources */,
 				9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */,
 			);

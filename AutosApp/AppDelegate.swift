@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
@@ -89,8 +90,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
                                        completion: nil)
         })
         
+        // init realm
+        initializeRealm()
+        
         return true
     }
 
+    private func initializeRealm() {
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        let realm = try! Realm()
+        guard realm.isEmpty else { return }
+        
+        // set Vehicle maker & model
+        VehicleUtils.saveMakerAndModel()
+        
+    }
 }
 
