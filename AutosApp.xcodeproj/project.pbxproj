@@ -27,6 +27,7 @@
 		9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D458D222302356F003AA632 /* MyAutosViewConroller.swift */; };
 		9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D458D24230237BB003AA632 /* GoogleService-Info.plist */; };
 		9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */; };
+		9D69DE07230781DB004620C3 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE06230781DB004620C3 /* EditProfileViewController.swift */; };
 		9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89988622EBF8DC00F424BA /* UIColor.swift */; };
 		9D89989022F107E000F424BA /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D89988F22F107E000F424BA /* home-32.png */; };
 		9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* LoginViewController.swift */; };
@@ -71,6 +72,7 @@
 		9D458D222302356F003AA632 /* MyAutosViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutosViewConroller.swift; sourceTree = "<group>"; };
 		9D458D24230237BB003AA632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		9D69DE06230781DB004620C3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		9D89988622EBF8DC00F424BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9D89988F22F107E000F424BA /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 		9D94FA0522E29B7F008B644C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				9D94FA0522E29B7F008B644C /* LoginViewController.swift */,
 				9D1C95B623023FE300C45C49 /* SignupViewController.swift */,
 				9D458D222302356F003AA632 /* MyAutosViewConroller.swift */,
+				9D69DE06230781DB004620C3 /* EditProfileViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */,
 				9D1C95B723023FE300C45C49 /* SignupViewController.swift in Sources */,
 				9D1C95BB230380BC00C45C49 /* TransitionButton.swift in Sources */,
+				9D69DE07230781DB004620C3 /* EditProfileViewController.swift in Sources */,
 				9DF802F522E930E300DEE2B2 /* VehicleModels.swift in Sources */,
 				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,
 				9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */,
