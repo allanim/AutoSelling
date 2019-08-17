@@ -58,6 +58,8 @@ class MyAutosViewController: UIViewController {
             dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
         } else if let dest = segue.destination as? EditProfileViewController {
             dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
+        } else if let dest = segue.destination as? ChangePasswordViewController {
+            dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
         }
     }
     
@@ -101,10 +103,10 @@ class MyAutosViewController: UIViewController {
         sender.customClick(controller: self, callFunc: logout())
     }
     
-    @IBAction func menuMySavedAutosClick(_ sender: Any) {
+    @IBAction func menuMySavedAutosClick(_ sender: LGButton) {
     }
     
-    @IBAction func menuSellMyAutosClick(_ sender: Any) {
+    @IBAction func menuSellMyAutosClick(_ sender: LGButton) {
     }
     
     @IBAction func menuEditProfileClick(_ sender: LGButton) {
@@ -115,7 +117,12 @@ class MyAutosViewController: UIViewController {
         }
     }
     
-    @IBAction func menuChangePasswordClick(_ sender: Any) {
+    @IBAction func menuChangePasswordClick(_ sender: LGButton) {
+        if (isLoginUser) {
+            self.menuGoTo(sender, withIdentifier: "MyAutosToChangePassword")
+        } else {
+            self.menuHaveToLogin(sender)
+        }
     }
     
 }
