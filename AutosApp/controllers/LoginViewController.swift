@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import TransitionButton
 import Firebase
+import TransitionButton
 
 class LoginViewController: UIViewController {
 
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
                 
                 self.present(alert, animated: true, completion: nil)
             } else {
-                // success
+                // check saved info
                 if self.swSaved.isOn {
                     self.userDefault.set(email, forKey: Key.EMAIL)
                     self.userDefault.set(password, forKey: Key.PASSWORD)

@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // Set firebase
+        FirebaseApp.configure()
+        Database.database().isPersistenceEnabled = true
+        
         // Launch screen, Reference from https://github.com/ameli90/launch-screen-animation
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -85,8 +89,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
                                        completion: nil)
         })
         
-        // Set firebase
-        FirebaseApp.configure()
         return true
     }
 

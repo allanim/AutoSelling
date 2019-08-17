@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import TransitionButton
 import Firebase
+import TransitionButton
 
 class MyAutosViewController: UIViewController {
     
@@ -16,16 +16,29 @@ class MyAutosViewController: UIViewController {
     @IBOutlet weak var viewUserInfo: UIView!
     @IBOutlet weak var viewLogout: UIView!
     
+    @IBOutlet weak var lbUserName: UILabel!
+    @IBOutlet weak var lbUserEmail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // check login
+        // check auth
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
+                // have auth
                 self.viewLogin.isHidden = true
                 self.viewUserInfo.isHidden = false
                 self.viewLogout.isHidden = false
+                
+                // set user info
+                let userInfoRef = Database.database().reference(withPath: "user-info")
+                userInfoRef.child(user!.uid).observe(.value, with: { snapshot in
+                    let userInfo = UserInfo(snapshot: snapshot);
+                    self.lbUserName.text = "Hello " + userInfo!.fullName
+                    self.lbUserEmail.text = userInfo?.email
+                })
             } else {
+                // do not have auth
                 self.viewLogin.isHidden = false
                 self.viewUserInfo.isHidden = true
                 self.viewLogout.isHidden = true

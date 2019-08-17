@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import TransitionButton
 import Firebase
+import TransitionButton
 
 class SignupViewController: UIViewController {
     
@@ -23,7 +23,7 @@ class SignupViewController: UIViewController {
     var sourceTabBarIndex: Int?
     
     // user info
-    let usersInfoRef = Database.database().reference(withPath: "user-info")
+    let userInfoRef = Database.database().reference(withPath: "user-info")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +66,7 @@ class SignupViewController: UIViewController {
                     // save user info
                     let user = Auth.auth().currentUser;
                     let userInfo = UserInfo(email: email, firstName: firstName, lastName: lastName)
-                    let initUserInfo = self.usersInfoRef.child(user!.uid)
+                    let initUserInfo = self.userInfoRef.child(user!.uid)
                     initUserInfo.setValue(userInfo.toAnyObject())
                     
                     // move

@@ -452,6 +452,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="My Autos" image="car-32.png" id="oEe-2y-0az"/>
                     <connections>
+                        <outlet property="lbUserEmail" destination="UsU-wO-4Fe" id="naM-9A-7Xp"/>
+                        <outlet property="lbUserName" destination="g6o-yN-y1k" id="1x7-jK-dx4"/>
                         <outlet property="viewLogin" destination="Fsz-Sq-EfF" id="gMZ-cg-8z1"/>
                         <outlet property="viewLogout" destination="kcE-qT-w7F" id="brf-vC-FMV"/>
                         <outlet property="viewUserInfo" destination="9fP-i5-IyP" id="bK5-P8-MS5"/>
@@ -1081,7 +1083,7 @@ LinkedIn: https://www.linkedin.com/in/allanim
         <image name="search-32.png" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N1Q-VK-peH"/>
+        <segue reference="4TF-lM-pfc"/>
         <segue reference="t0g-9B-9b8"/>
     </inferredMetricsTieBreakers>
 </document>
