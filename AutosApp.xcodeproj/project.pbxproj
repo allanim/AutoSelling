@@ -32,6 +32,8 @@
 		9D69DE0B23088952004620C3 /* car-list.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D69DE0A23088952004620C3 /* car-list.json */; };
 		9D69DE0D230890AD004620C3 /* VehicleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE0C230890AD004620C3 /* VehicleMaker.swift */; };
 		9D69DE1023089443004620C3 /* VehicleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE0F23089443004620C3 /* VehicleUtils.swift */; };
+		9D69DE122308E364004620C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE112308E364004620C3 /* HomeViewController.swift */; };
+		9D69DE1423090CB0004620C3 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69DE1323090CB0004620C3 /* Results.swift */; };
 		9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89988622EBF8DC00F424BA /* UIColor.swift */; };
 		9D89989022F107E000F424BA /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D89988F22F107E000F424BA /* home-32.png */; };
 		9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94FA0522E29B7F008B644C /* LoginViewController.swift */; };
@@ -81,6 +83,8 @@
 		9D69DE0A23088952004620C3 /* car-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "car-list.json"; sourceTree = "<group>"; };
 		9D69DE0C230890AD004620C3 /* VehicleMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMaker.swift; sourceTree = "<group>"; };
 		9D69DE0F23089443004620C3 /* VehicleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleUtils.swift; sourceTree = "<group>"; };
+		9D69DE112308E364004620C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D69DE1323090CB0004620C3 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		9D89988622EBF8DC00F424BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9D89988F22F107E000F424BA /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 		9D94FA0522E29B7F008B644C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -188,9 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				9D06A51822E148CD00FBA6EC /* ViewController.swift */,
+				9D69DE112308E364004620C3 /* HomeViewController.swift */,
+				9D458D222302356F003AA632 /* MyAutosViewConroller.swift */,
 				9D94FA0522E29B7F008B644C /* LoginViewController.swift */,
 				9D1C95B623023FE300C45C49 /* SignupViewController.swift */,
-				9D458D222302356F003AA632 /* MyAutosViewConroller.swift */,
 				9D69DE06230781DB004620C3 /* EditProfileViewController.swift */,
 				9D69DE08230859B7004620C3 /* ChangePasswordViewController.swift */,
 			);
@@ -235,6 +240,7 @@
 				9D4B275322F3BD7F0091C068 /* RoundedCornerView.swift */,
 				9DB7193922FCEFC400C2F6C8 /* LineButton.swift */,
 				9D1C95BA230380BC00C45C49 /* TransitionButton.swift */,
+				9D69DE1323090CB0004620C3 /* Results.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 				9D06A51922E148CD00FBA6EC /* ViewController.swift in Sources */,
 				9D69DE09230859B7004620C3 /* ChangePasswordViewController.swift in Sources */,
 				9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */,
+				9D69DE122308E364004620C3 /* HomeViewController.swift in Sources */,
 				9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */,
 				9D69DE0D230890AD004620C3 /* VehicleMaker.swift in Sources */,
 				9DF802F122E926C800DEE2B2 /* User.swift in Sources */,
@@ -398,6 +405,7 @@
 				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,
 				9D22E4BC22EB7F9500CA81BB /* Comment.swift in Sources */,
 				9D3CED8023076AF60093502B /* Key.swift in Sources */,
+				9D69DE1423090CB0004620C3 /* Results.swift in Sources */,
 				9D69DE1023089443004620C3 /* VehicleUtils.swift in Sources */,
 				9D06A51722E148CD00FBA6EC /* AppDelegate.swift in Sources */,
 				9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */,
