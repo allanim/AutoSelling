@@ -584,22 +584,23 @@ LinkedIn: https://www.linkedin.com/in/allanim
         <!--Search-->
         <scene sceneID="dLl-GM-mbO">
             <objects>
-                <viewController id="PP1-X4-ScV" sceneMemberID="viewController">
+                <viewController id="PP1-X4-ScV" customClass="SearchViewController" customModule="AutosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IEX-6h-ZpT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TT-yD-y4N">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TT-yD-y4N">
                                 <rect key="frame" x="20" y="70" width="374" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" red="0.31764705879999999" green="0.36078431370000003" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="b38-HX-XiP">
-                                <rect key="frame" x="20" y="124" width="374" height="596"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="b38-HX-XiP">
+                                <rect key="frame" x="20" y="124" width="374" height="689"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdJ-GW-4XP" customClass="RoundedCornerView" customModule="AutosApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="596"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdJ-GW-4XP" customClass="RoundedCornerView" customModule="AutosApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kll-iD-t0H">
                                                 <rect key="frame" x="255" y="8" width="93" height="27"/>
@@ -608,6 +609,9 @@ LinkedIn: https://www.linkedin.com/in/allanim
                                                 <state key="normal" title="CLEAR">
                                                     <color key="titleColor" red="0.77663522959999998" green="0.39168864489999999" blue="0.29022493960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnClearClick:" destination="PP1-X4-ScV" eventType="touchUpInside" id="PTp-7K-pPF"/>
+                                                </connections>
                                             </button>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-ew-uYb">
                                                 <rect key="frame" x="25" y="43" width="323" height="29"/>
@@ -781,12 +785,13 @@ LinkedIn: https://www.linkedin.com/in/allanim
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r1L-Ri-69Z"/>
+                                                    <action selector="btnSearchClick:" destination="PP1-X4-ScV" eventType="touchUpInside" id="buC-hN-8Bw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="699" id="WNd-YV-j8H"/>
+                                            <constraint firstAttribute="height" constant="600" id="XRK-JZ-Q36"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -801,27 +806,36 @@ LinkedIn: https://www.linkedin.com/in/allanim
                                     <constraint firstItem="vdJ-GW-4XP" firstAttribute="centerX" secondItem="b38-HX-XiP" secondAttribute="centerX" id="mvX-M6-lQe"/>
                                     <constraint firstItem="vdJ-GW-4XP" firstAttribute="top" secondItem="b38-HX-XiP" secondAttribute="top" id="o1q-bs-bad"/>
                                     <constraint firstItem="vdJ-GW-4XP" firstAttribute="leading" secondItem="b38-HX-XiP" secondAttribute="leading" id="q58-7A-1TD"/>
-                                    <constraint firstAttribute="bottom" secondItem="vdJ-GW-4XP" secondAttribute="bottom" constant="-10" id="zCL-W3-ZN1"/>
+                                    <constraint firstAttribute="bottom" secondItem="vdJ-GW-4XP" secondAttribute="bottom" constant="20" id="zCL-W3-ZN1"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="b38-HX-XiP" firstAttribute="top" secondItem="4TT-yD-y4N" secondAttribute="bottom" constant="18" id="3YZ-Dp-AtT"/>
                             <constraint firstItem="b38-HX-XiP" firstAttribute="leading" secondItem="IEX-6h-ZpT" secondAttribute="leadingMargin" id="BSz-hn-LUe"/>
-                            <constraint firstItem="b38-HX-XiP" firstAttribute="leading" secondItem="4TT-yD-y4N" secondAttribute="leading" id="FU4-7X-uxo"/>
                             <constraint firstItem="b38-HX-XiP" firstAttribute="top" secondItem="IEX-6h-ZpT" secondAttribute="top" constant="124" id="Nbp-PD-Dun"/>
-                            <constraint firstItem="b38-HX-XiP" firstAttribute="trailing" secondItem="4TT-yD-y4N" secondAttribute="trailing" id="hSQ-J2-SdX"/>
                             <constraint firstItem="b38-HX-XiP" firstAttribute="trailing" secondItem="IEX-6h-ZpT" secondAttribute="trailingMargin" id="scB-zT-b8t"/>
                             <constraint firstItem="b38-HX-XiP" firstAttribute="bottom" secondItem="Kzw-dx-PlQ" secondAttribute="bottom" id="xET-V2-7Zj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kzw-dx-PlQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="search-32.png" id="flg-PY-R1s"/>
+                    <connections>
+                        <outlet property="sgStatus" destination="fdy-ew-uYb" id="jAT-lc-OnO"/>
+                        <outlet property="txtColor" destination="TKi-F0-udr" id="vb1-s3-4Ev"/>
+                        <outlet property="txtFuelType" destination="kh0-iW-Ggh" id="IqE-A8-xSF"/>
+                        <outlet property="txtKilometers" destination="yXt-O1-kHS" id="jEl-Q7-GRD"/>
+                        <outlet property="txtMake" destination="DUJ-bj-X8W" id="Oyu-uZ-cl6"/>
+                        <outlet property="txtModel" destination="ytn-AO-Z3R" id="XVP-Ny-xCe"/>
+                        <outlet property="txtPrice" destination="cY7-31-OvL" id="ujo-yG-0nP"/>
+                        <outlet property="txtTransmission" destination="8vG-l8-YMk" id="hQB-am-V4o"/>
+                        <outlet property="txtType" destination="59M-QJ-Fa8" id="x0C-TJ-yfT"/>
+                        <outlet property="txtYear" destination="eMs-sR-nzn" id="XlP-6m-0x2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4v-Mj-jN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1086" y="1537"/>
+            <point key="canvasLocation" x="-1086.9565217391305" y="1536.8303571428571"/>
         </scene>
         <!--Home-->
         <scene sceneID="Iwl-6v-tO5">
