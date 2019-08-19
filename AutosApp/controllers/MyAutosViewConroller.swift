@@ -107,6 +107,11 @@ class MyAutosViewController: UIViewController {
     }
     
     @IBAction func menuSellMyAutosClick(_ sender: LGButton) {
+        if (isLoginUser) {
+            self.menuGoTo(sender, withIdentifier: "MyAutosToSellMyAutos")
+        } else {
+            self.menuHaveToLogin(sender)
+        }
     }
     
     @IBAction func menuEditProfileClick(_ sender: LGButton) {

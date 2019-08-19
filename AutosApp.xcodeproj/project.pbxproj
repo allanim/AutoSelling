@@ -23,6 +23,7 @@
 		9D22E4C922EBBBFF00CA81BB /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C122EBBBA100CA81BB /* SF-Pro-Rounded-Regular.otf */; };
 		9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */; };
 		9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */; };
+		9D2482042309DEB20029044D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2482032309DEB20029044D /* PostViewController.swift */; };
 		9D3CED8023076AF60093502B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CED7F23076AF60093502B /* Key.swift */; };
 		9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D458D222302356F003AA632 /* MyAutosViewConroller.swift */; };
 		9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D458D24230237BB003AA632 /* GoogleService-Info.plist */; };
@@ -75,6 +76,7 @@
 		9D22E4C322EBBBA100CA81BB /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		9D2482032309DEB20029044D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		9D3CED7F23076AF60093502B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		9D458D222302356F003AA632 /* MyAutosViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutosViewConroller.swift; sourceTree = "<group>"; };
 		9D458D24230237BB003AA632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				9D1C95B623023FE300C45C49 /* SignupViewController.swift */,
 				9D69DE06230781DB004620C3 /* EditProfileViewController.swift */,
 				9D69DE08230859B7004620C3 /* ChangePasswordViewController.swift */,
+				9D2482032309DEB20029044D /* PostViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2482042309DEB20029044D /* PostViewController.swift in Sources */,
 				9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */,
 				9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */,
 				9D06A51922E148CD00FBA6EC /* ViewController.swift in Sources */,
