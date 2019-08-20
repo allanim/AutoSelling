@@ -24,6 +24,39 @@
 		9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */; };
 		9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */; };
 		9D2482042309DEB20029044D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2482032309DEB20029044D /* PostViewController.swift */; };
+		9D248206230B630E0029044D /* SellMyAutosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D248205230B630E0029044D /* SellMyAutosViewController.swift */; };
+		9D248229230B66760029044D /* Mercedes-Benz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248209230B66710029044D /* Mercedes-Benz.jpg */; };
+		9D24822A230B66760029044D /* Chevrolet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24820A230B66710029044D /* Chevrolet.jpg */; };
+		9D24822B230B66760029044D /* Nissan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24820B230B66710029044D /* Nissan.jpg */; };
+		9D24822C230B66760029044D /* Volkswagen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24820C230B66710029044D /* Volkswagen.jpg */; };
+		9D24822D230B66760029044D /* BMW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24820D230B66720029044D /* BMW.jpg */; };
+		9D24822E230B66760029044D /* Jaguar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24820E230B66720029044D /* Jaguar.jpg */; };
+		9D24822F230B66760029044D /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D24820F230B66720029044D /* car.png */; };
+		9D248230230B66760029044D /* Suzuki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248210230B66720029044D /* Suzuki.jpg */; };
+		9D248231230B66760029044D /* Mazda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248211230B66720029044D /* Mazda.jpg */; };
+		9D248232230B66760029044D /* Peugeot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248212230B66720029044D /* Peugeot.jpg */; };
+		9D248233230B66760029044D /* Infiniti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248213230B66720029044D /* Infiniti.jpg */; };
+		9D248234230B66760029044D /* Saab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248214230B66730029044D /* Saab.jpg */; };
+		9D248235230B66760029044D /* Subaru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248215230B66730029044D /* Subaru.jpg */; };
+		9D248236230B66760029044D /* Citroën.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248216230B66730029044D /* Citroën.jpg */; };
+		9D248237230B66760029044D /* Volvo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248217230B66730029044D /* Volvo.jpg */; };
+		9D248238230B66760029044D /* MINI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248218230B66730029044D /* MINI.jpg */; };
+		9D248239230B66760029044D /* Audi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248219230B66730029044D /* Audi.jpg */; };
+		9D24823A230B66760029044D /* Toyota.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24821A230B66730029044D /* Toyota.jpg */; };
+		9D24823B230B66760029044D /* Jeep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24821B230B66740029044D /* Jeep.jpg */; };
+		9D24823C230B66760029044D /* Land Rover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24821C230B66740029044D /* Land Rover.jpg */; };
+		9D24823D230B66760029044D /* Porsche.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24821D230B66740029044D /* Porsche.jpg */; };
+		9D24823E230B66760029044D /* Lexus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24821E230B66740029044D /* Lexus.jpg */; };
+		9D24823F230B66760029044D /* Fiat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D24821F230B66740029044D /* Fiat.jpg */; };
+		9D248240230B66760029044D /* Hyundai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248220230B66750029044D /* Hyundai.jpg */; };
+		9D248241230B66760029044D /* Renault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248221230B66750029044D /* Renault.jpg */; };
+		9D248242230B66760029044D /* Honda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248222230B66750029044D /* Honda.jpg */; };
+		9D248243230B66760029044D /* Ford.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248223230B66750029044D /* Ford.jpg */; };
+		9D248244230B66760029044D /* Dacia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248224230B66750029044D /* Dacia.jpg */; };
+		9D248245230B66760029044D /* Alfa Romeo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248225230B66760029044D /* Alfa Romeo.jpg */; };
+		9D248246230B66760029044D /* Kia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248226230B66760029044D /* Kia.jpg */; };
+		9D248247230B66760029044D /* Mitsubishi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248227230B66760029044D /* Mitsubishi.jpg */; };
+		9D248249230B7A580029044D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D248248230B7A580029044D /* Double.swift */; };
 		9D3CED8023076AF60093502B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CED7F23076AF60093502B /* Key.swift */; };
 		9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D458D222302356F003AA632 /* MyAutosViewConroller.swift */; };
 		9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D458D24230237BB003AA632 /* GoogleService-Info.plist */; };
@@ -77,6 +110,39 @@
 		9D22E4C422EBBBA100CA81BB /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		9D22E4C522EBBBA100CA81BB /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		9D2482032309DEB20029044D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9D248205230B630E0029044D /* SellMyAutosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellMyAutosViewController.swift; sourceTree = "<group>"; };
+		9D248209230B66710029044D /* Mercedes-Benz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mercedes-Benz.jpg"; sourceTree = "<group>"; };
+		9D24820A230B66710029044D /* Chevrolet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chevrolet.jpg; sourceTree = "<group>"; };
+		9D24820B230B66710029044D /* Nissan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nissan.jpg; sourceTree = "<group>"; };
+		9D24820C230B66710029044D /* Volkswagen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Volkswagen.jpg; sourceTree = "<group>"; };
+		9D24820D230B66720029044D /* BMW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BMW.jpg; sourceTree = "<group>"; };
+		9D24820E230B66720029044D /* Jaguar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jaguar.jpg; sourceTree = "<group>"; };
+		9D24820F230B66720029044D /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		9D248210230B66720029044D /* Suzuki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Suzuki.jpg; sourceTree = "<group>"; };
+		9D248211230B66720029044D /* Mazda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mazda.jpg; sourceTree = "<group>"; };
+		9D248212230B66720029044D /* Peugeot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Peugeot.jpg; sourceTree = "<group>"; };
+		9D248213230B66720029044D /* Infiniti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Infiniti.jpg; sourceTree = "<group>"; };
+		9D248214230B66730029044D /* Saab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Saab.jpg; sourceTree = "<group>"; };
+		9D248215230B66730029044D /* Subaru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Subaru.jpg; sourceTree = "<group>"; };
+		9D248216230B66730029044D /* Citroën.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Citroën.jpg"; sourceTree = "<group>"; };
+		9D248217230B66730029044D /* Volvo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Volvo.jpg; sourceTree = "<group>"; };
+		9D248218230B66730029044D /* MINI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MINI.jpg; sourceTree = "<group>"; };
+		9D248219230B66730029044D /* Audi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Audi.jpg; sourceTree = "<group>"; };
+		9D24821A230B66730029044D /* Toyota.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toyota.jpg; sourceTree = "<group>"; };
+		9D24821B230B66740029044D /* Jeep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jeep.jpg; sourceTree = "<group>"; };
+		9D24821C230B66740029044D /* Land Rover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Land Rover.jpg"; sourceTree = "<group>"; };
+		9D24821D230B66740029044D /* Porsche.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Porsche.jpg; sourceTree = "<group>"; };
+		9D24821E230B66740029044D /* Lexus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lexus.jpg; sourceTree = "<group>"; };
+		9D24821F230B66740029044D /* Fiat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fiat.jpg; sourceTree = "<group>"; };
+		9D248220230B66750029044D /* Hyundai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hyundai.jpg; sourceTree = "<group>"; };
+		9D248221230B66750029044D /* Renault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Renault.jpg; sourceTree = "<group>"; };
+		9D248222230B66750029044D /* Honda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Honda.jpg; sourceTree = "<group>"; };
+		9D248223230B66750029044D /* Ford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ford.jpg; sourceTree = "<group>"; };
+		9D248224230B66750029044D /* Dacia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dacia.jpg; sourceTree = "<group>"; };
+		9D248225230B66760029044D /* Alfa Romeo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alfa Romeo.jpg"; sourceTree = "<group>"; };
+		9D248226230B66760029044D /* Kia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kia.jpg; sourceTree = "<group>"; };
+		9D248227230B66760029044D /* Mitsubishi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mitsubishi.jpg; sourceTree = "<group>"; };
+		9D248248230B7A580029044D /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		9D3CED7F23076AF60093502B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		9D458D222302356F003AA632 /* MyAutosViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutosViewConroller.swift; sourceTree = "<group>"; };
 		9D458D24230237BB003AA632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -184,6 +250,44 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		9D248207230B66590029044D /* logo */ = {
+			isa = PBXGroup;
+			children = (
+				9D248225230B66760029044D /* Alfa Romeo.jpg */,
+				9D248219230B66730029044D /* Audi.jpg */,
+				9D24820D230B66720029044D /* BMW.jpg */,
+				9D24820F230B66720029044D /* car.png */,
+				9D24820A230B66710029044D /* Chevrolet.jpg */,
+				9D248216230B66730029044D /* Citroën.jpg */,
+				9D248224230B66750029044D /* Dacia.jpg */,
+				9D24821F230B66740029044D /* Fiat.jpg */,
+				9D248223230B66750029044D /* Ford.jpg */,
+				9D248222230B66750029044D /* Honda.jpg */,
+				9D248220230B66750029044D /* Hyundai.jpg */,
+				9D248213230B66720029044D /* Infiniti.jpg */,
+				9D24820E230B66720029044D /* Jaguar.jpg */,
+				9D24821B230B66740029044D /* Jeep.jpg */,
+				9D248226230B66760029044D /* Kia.jpg */,
+				9D24821C230B66740029044D /* Land Rover.jpg */,
+				9D24821E230B66740029044D /* Lexus.jpg */,
+				9D248211230B66720029044D /* Mazda.jpg */,
+				9D248209230B66710029044D /* Mercedes-Benz.jpg */,
+				9D248218230B66730029044D /* MINI.jpg */,
+				9D248227230B66760029044D /* Mitsubishi.jpg */,
+				9D24820B230B66710029044D /* Nissan.jpg */,
+				9D248212230B66720029044D /* Peugeot.jpg */,
+				9D24821D230B66740029044D /* Porsche.jpg */,
+				9D248221230B66750029044D /* Renault.jpg */,
+				9D248214230B66730029044D /* Saab.jpg */,
+				9D248215230B66730029044D /* Subaru.jpg */,
+				9D248210230B66720029044D /* Suzuki.jpg */,
+				9D24821A230B66730029044D /* Toyota.jpg */,
+				9D24820C230B66710029044D /* Volkswagen.jpg */,
+				9D248217230B66730029044D /* Volvo.jpg */,
+			);
+			path = logo;
+			sourceTree = "<group>";
+		};
 		9D69DE0E2308942C004620C3 /* utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +308,7 @@
 				9D69DE06230781DB004620C3 /* EditProfileViewController.swift */,
 				9D69DE08230859B7004620C3 /* ChangePasswordViewController.swift */,
 				9D2482032309DEB20029044D /* PostViewController.swift */,
+				9D248205230B630E0029044D /* SellMyAutosViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -211,6 +316,7 @@
 		9DEF1A0922E14C8800927D04 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9D248207230B66590029044D /* logo */,
 				9DB7193B22FCF66F00C2F6C8 /* change-password.png */,
 				9DB7193E22FCF67000C2F6C8 /* edit-profile.png */,
 				9DB7193D22FCF66F00C2F6C8 /* my-saved-autos.png */,
@@ -231,8 +337,8 @@
 			children = (
 				9DF802F022E926C800DEE2B2 /* User.swift */,
 				9DF802F222E9292900DEE2B2 /* UserInfo.swift */,
-				9DF802F622E9314400DEE2B2 /* Vehicle.swift */,
 				9D22E4BB22EB7F9500CA81BB /* Comment.swift */,
+				9DF802F622E9314400DEE2B2 /* Vehicle.swift */,
 				9D69DE0C230890AD004620C3 /* VehicleMaker.swift */,
 				9DF802F422E930E300DEE2B2 /* VehicleModel.swift */,
 			);
@@ -247,6 +353,7 @@
 				9DB7193922FCEFC400C2F6C8 /* LineButton.swift */,
 				9D1C95BA230380BC00C45C49 /* TransitionButton.swift */,
 				9D69DE1323090CB0004620C3 /* Results.swift */,
+				9D248248230B7A580029044D /* Double.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -319,28 +426,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D24822D230B66760029044D /* BMW.jpg in Resources */,
+				9D248242230B66760029044D /* Honda.jpg in Resources */,
+				9D248244230B66760029044D /* Dacia.jpg in Resources */,
 				9D89989022F107E000F424BA /* home-32.png in Resources */,
+				9D248239230B66760029044D /* Audi.jpg in Resources */,
 				9D06A52422E148CE00FBA6EC /* LaunchScreen.storyboard in Resources */,
 				9D22E4C922EBBBFF00CA81BB /* SF-Pro-Rounded-Regular.otf in Resources */,
 				9DEB3AD022F109CF00B3ED72 /* info-32.png in Resources */,
+				9D248231230B66760029044D /* Mazda.jpg in Resources */,
 				9DB7194122FCF67000C2F6C8 /* my-saved-autos.png in Resources */,
+				9D248235230B66760029044D /* Subaru.jpg in Resources */,
+				9D24823E230B66760029044D /* Lexus.jpg in Resources */,
 				9D22E4C722EBBBFF00CA81BB /* SF-Pro-Display-Regular.otf in Resources */,
 				9DEB3ACE22F109CF00B3ED72 /* car-32.png in Resources */,
+				9D24822B230B66760029044D /* Nissan.jpg in Resources */,
+				9D24822E230B66760029044D /* Jaguar.jpg in Resources */,
 				9D1CAA2022EBC30300180999 /* delete.png in Resources */,
+				9D24823D230B66760029044D /* Porsche.jpg in Resources */,
+				9D248236230B66760029044D /* Citroën.jpg in Resources */,
 				9DEB3ACF22F109CF00B3ED72 /* search-32.png in Resources */,
+				9D24822F230B66760029044D /* car.png in Resources */,
+				9D248230230B66760029044D /* Suzuki.jpg in Resources */,
 				9DEF1A0B22E14CA100927D04 /* star.png in Resources */,
 				9D22E4CA22EBBBFF00CA81BB /* SF-Pro-Text-Bold.otf in Resources */,
 				9DB7194222FCF67000C2F6C8 /* edit-profile.png in Resources */,
+				9D248229230B66760029044D /* Mercedes-Benz.jpg in Resources */,
+				9D248240230B66760029044D /* Hyundai.jpg in Resources */,
+				9D24823B230B66760029044D /* Jeep.jpg in Resources */,
 				9D22E4CB22EBBBFF00CA81BB /* SF-Pro-Text-Regular.otf in Resources */,
 				9DEF1A0D22E1556400927D04 /* logo.png in Resources */,
+				9D248237230B66760029044D /* Volvo.jpg in Resources */,
 				9D22E4C622EBBBFF00CA81BB /* SF-Pro-Display-Bold.otf in Resources */,
+				9D248246230B66760029044D /* Kia.jpg in Resources */,
 				9D22E4C822EBBBFF00CA81BB /* SF-Pro-Rounded-Bold.otf in Resources */,
 				9D06A52122E148CE00FBA6EC /* Assets.xcassets in Resources */,
+				9D248247230B66760029044D /* Mitsubishi.jpg in Resources */,
+				9D24823C230B66760029044D /* Land Rover.jpg in Resources */,
+				9D248233230B66760029044D /* Infiniti.jpg in Resources */,
 				9DB7193F22FCF67000C2F6C8 /* change-password.png in Resources */,
 				9D69DE0B23088952004620C3 /* car-list.json in Resources */,
+				9D248241230B66760029044D /* Renault.jpg in Resources */,
+				9D24823A230B66760029044D /* Toyota.jpg in Resources */,
+				9D24823F230B66760029044D /* Fiat.jpg in Resources */,
+				9D24822C230B66760029044D /* Volkswagen.jpg in Resources */,
+				9D248243230B66760029044D /* Ford.jpg in Resources */,
 				9DB7194022FCF67000C2F6C8 /* sell-my-autos.png in Resources */,
+				9D248232230B66760029044D /* Peugeot.jpg in Resources */,
 				9D06A51C22E148CD00FBA6EC /* Main.storyboard in Resources */,
+				9D248238230B66760029044D /* MINI.jpg in Resources */,
+				9D248234230B66760029044D /* Saab.jpg in Resources */,
+				9D24822A230B66760029044D /* Chevrolet.jpg in Resources */,
 				9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */,
+				9D248245230B66760029044D /* Alfa Romeo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +535,7 @@
 				9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */,
 				9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */,
 				9D06A51922E148CD00FBA6EC /* ViewController.swift in Sources */,
+				9D248249230B7A580029044D /* Double.swift in Sources */,
 				9D69DE09230859B7004620C3 /* ChangePasswordViewController.swift in Sources */,
 				9D94FA0622E29B7F008B644C /* LoginViewController.swift in Sources */,
 				9D69DE122308E364004620C3 /* HomeViewController.swift in Sources */,
@@ -408,6 +547,7 @@
 				9D1C95B723023FE300C45C49 /* SignupViewController.swift in Sources */,
 				9D1C95BB230380BC00C45C49 /* TransitionButton.swift in Sources */,
 				9D69DE192309B1F8004620C3 /* SearchViewController.swift in Sources */,
+				9D248206230B630E0029044D /* SellMyAutosViewController.swift in Sources */,
 				9D69DE07230781DB004620C3 /* EditProfileViewController.swift in Sources */,
 				9DF802F522E930E300DEE2B2 /* VehicleModel.swift in Sources */,
 				9DB7193A22FCEFC400C2F6C8 /* LineButton.swift in Sources */,

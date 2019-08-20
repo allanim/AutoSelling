@@ -38,6 +38,8 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     // autos
     let autosRef = Database.database().reference(withPath: "autos")
     
+    let postToList = "PostToSellMyAutos"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -177,6 +179,12 @@ class PostViewController: UIViewController, UITextFieldDelegate {
             let model = txtModel.text,
             let year = Int(txtYear.text ?? "0"),
             let price = Double(txtPrice.text ?? "0.0"),
+            let kilometers = Int(txtKilometers.text ?? "0"),
+            let drive = txtDrive.text,
+            let transmission = txtTransmission.text,
+            let exteriorColor = txtColor.text,
+            let fuelType = txtFuelType.text,
+            let numberOfDoors = txtDoors.text,
             let name = txtSellerName.text,
             let phone = txtSellerPhone.text,
             let email = txtSellerEmail.text,
@@ -193,35 +201,15 @@ class PostViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        
         // save user info
         let user = Auth.auth().currentUser
-        var vehicle = Vehicle(uid: user!.uid, type: type,  status: status,
-                              maker: maker, model: model, year: year, price: price,
-                              phone: phone, email: email, name: name)
-        vehicle.kilometers = Int(txtKilometers.text ?? "0")!
-        if (txtDrive.text!.count > 0) {
-            vehicle.drive = Drive.init(rawValue: txtDrive.text!)
-        }
-        if (txtTransmission.text!.count > 0) {
-            vehicle.transmission = Transmission.init(rawValue: txtTransmission.text!)
-        }
-        if (txtColor.text!.count > 0) {
-            vehicle.exteriorColor = Colors.init(rawValue: txtColor.text!)
-        }
-        if (txtFuelType.text!.count > 0) {
-            vehicle.fuelType = FuelType.init(rawValue: txtFuelType.text!)
-        }
-        if (txtDoors.text!.count > 0) {
-            vehicle.numberOfDoors = Doors.init(rawValue: txtDoors.text!)
-        }
-        
-        // save
-        let initAutos = self.autosRef.child(UUID.init().uuidString)
-        initAutos.setValue(vehicle.toAnyObject())
+        Vehicle.add(uid: user!.uid, type: type, status: status,
+                    maker: maker, model: model, year: year, price: price,
+                    kilometers: kilometers, drive: drive, transmission: transmission, color: exteriorColor, fuelType: fuelType, doors: numberOfDoors,
+                    phone: phone, email: email, name: name)
         
         // move
-//        self.performSegue(withIdentifier: self.postToList, sender: nil)
+        self.performSegue(withIdentifier: self.postToList, sender: nil)
     }
 }
 

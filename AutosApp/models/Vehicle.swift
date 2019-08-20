@@ -7,51 +7,72 @@
 //
 
 import Foundation
-import Firebase
+import RealmSwift
 
-struct Vehicle {
-    let ref: DatabaseReference?
-    let key: String
+@objcMembers class Vehicle: Object  {
     
-    let uid: String
+    enum Property: String {
+        case id, uid, regDate
+    }
     
-    var saleStatus: SaleStatus
+    dynamic var id = UUID().uuidString
     
-    var type: VehicleType
-    var status: VehicleStatus
-    var maker: String
-    var model: String
-    var year: Int
-    var price: Double
-    var kilometers: Int
+    dynamic var uid: String = ""
+    dynamic var saleStatus = SaleStatus.DRAFT
     
-    var drive: Drive?
-    var transmission: Transmission?
-    var exteriorColor: Colors?
-    var fuelType: FuelType?
-    var numberOfDoors: Doors?
+    dynamic var type = VehicleType.SEDAN
+    dynamic var status = VehicleStatus.USED
+    dynamic var maker = ""
+    dynamic var model = ""
+    dynamic var year = 2019
+    dynamic var price = 0.0
+    dynamic var kilometers = 0
     
-    var images: [String]?
+    dynamic var drive = Drive.FWD
+    dynamic var transmission = Transmission.AUTOMATIC
+    dynamic var exteriorColor = Colors.OTHER
+    dynamic var fuelType = FuelType.OTHER
+    dynamic var numberOfDoors = Doors.Dx
     
-    var phone: String
-    var email: String
-    var name: String
+    dynamic var phone = ""
+    dynamic var email = ""
+    dynamic var name = ""
     
-    var regDate: String
+    dynamic var regDate = ""
     
-    init(uid: String, type: String, status: String, maker: String, model: String, year: Int, price: Double, phone: String, email: String, name: String) {
-        self.ref = nil
-        self.key = ""
+    var displayName: String {
+        get {
+            return String(year) + " " + maker + " " + model
+        }
+    }
+    
+    override static func primaryKey() -> String? {
+        return Vehicle.Property.id.rawValue
+    }
+    
+    convenience init(uid: String,
+                     type: String, status: String, maker: String, model: String, year: Int, price: Double,
+                     kilometers: Int, drive: String, transmission: String, color: String, fuelType: String, doors: String,
+                     phone: String, email: String, name: String) {
+        
+        self.init()
         
         self.uid = uid
-        self.saleStatus = SaleStatus.DRAFT
+        self.saleStatus = saleStatus
+        
         self.type = VehicleType.init(rawValue: type)!
         self.status = VehicleStatus.init(rawValue: status)!
         self.maker = maker
         self.model = model
         self.year = year
         self.price = price
-        self.kilometers = 0
+        
+        self.kilometers = kilometers
+        self.drive = Drive.init(rawValue: drive)!
+        self.transmission = Transmission.init(rawValue: transmission)!
+        self.exteriorColor = Colors.init(rawValue: color)!
+        self.fuelType = FuelType.init(rawValue: fuelType)!
+        self.numberOfDoors = Doors.init(rawValue: doors)!
         
         self.phone = phone
         self.email = email
@@ -62,77 +83,51 @@ struct Vehicle {
         self.regDate = format.string(from: Date())
         
     }
-    
-    init?(snapshot: DataSnapshot) {
-        
-        guard
-            let value = snapshot.value as? [String: AnyObject],
-            let uid = value["uid"] as? String,
-            let saleStatus = value["saleStatus"] as? String,
-            let type = value["type"] as? String,
-            let status = value["status"] as? String,
-            let maker = value["maker"] as? String,
-            let model = value["model"] as? String,
-            let year = value["year"] as? Int,
-            let price = value["price"] as? Double,
-            let kilometers = value["kilometers"] as? Int,
-            let drive = value["drive"] as? String,
-            let transmission = value["transmission"] as? String,
-            let exteriorColor = value["exteriorColor"] as? String,
-            let fuelType = value["fuelType"] as? String,
-            let numberOfDoors = value["numberOfDoors"] as? String,
-            let phone = value["phone"] as? String,
-            let email = value["email"] as? String,
-            let name = value["name"] as? String,
-            let regDate = value["regDate"] as? String
-            else {
-                return nil
-        }
-        
-        self.ref = snapshot.ref
-        self.key = snapshot.key
-        self.uid = uid
-        self.saleStatus = SaleStatus.init(rawValue: saleStatus)!
-        self.type = VehicleType.init(rawValue: type)!
-        self.status = VehicleStatus.init(rawValue: status)!
-        self.maker = maker
-        self.model = model
-        self.year = year
-        self.price = price
-        self.kilometers = kilometers
-        self.drive = Drive.init(rawValue: drive)
-        self.transmission = Transmission.init(rawValue: transmission)
-        self.exteriorColor = Colors.init(rawValue: exteriorColor)
-        self.fuelType = FuelType.init(rawValue: fuelType)
-        self.numberOfDoors = Doors.init(rawValue: numberOfDoors)
-        self.phone = phone
-        self.email = email
-        self.name = name
-        self.regDate = regDate
-        self.images = []
+}
+
+// CRUD methods
+extension Vehicle {
+    static func all(in realm: Realm = try! Realm()) -> Results<Vehicle> {
+        return realm.objects(Vehicle.self)
+            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue)
     }
     
-    func toAnyObject() -> Any {
-        return [
-            "uid": uid,
-            "saleStatus": saleStatus.rawValue,
-            "type": type.rawValue,
-            "status": status.rawValue,
-            "maker": maker,
-            "model": model,
-            "year": year,
-            "price": price,
-            "kilometers": kilometers,
-            "drive": drive?.rawValue ?? "",
-            "transmission": transmission?.rawValue ?? "",
-            "exteriorColor": exteriorColor?.rawValue ?? "",
-            "fuelType": fuelType?.rawValue ?? "",
-            "numberOfDoors": numberOfDoors?.rawValue ?? "",
-            "phone": phone,
-            "email": email,
-            "name": name,
-            "regDate": regDate
-        ]
+    static func myAutos(uid: String, in realm: Realm = try! Realm()) -> Results<Vehicle> {
+        let predicate = NSPredicate(format: "uid == %@", uid)
+        return realm.objects(Vehicle.self)
+            .filter(predicate)
+            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+    }
+    
+    static func search(make: String, model: String, in realm: Realm = try! Realm()) -> Results<Vehicle> {
+        let predicate = NSPredicate(format: "make == %@ and model == %@", make, model)
+        return realm.objects(Vehicle.self)
+            .filter(predicate)
+            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue)
+    }
+    
+    @discardableResult
+    static func add(uid: String,
+                    type: String, status: String, maker: String, model: String, year: Int, price: Double,
+                    kilometers: Int, drive: String, transmission: String, color: String, fuelType: String, doors: String,
+                    phone: String, email: String, name: String,
+                    in realm: Realm = try! Realm())
+        -> Vehicle {
+            let item = Vehicle(uid: uid,
+                               type: type, status: status, maker: maker, model: model, year: year, price: price,
+                               kilometers: kilometers, drive: drive, transmission: transmission, color: color, fuelType: fuelType, doors: doors,
+                               phone: phone, email: email, name: name)
+            try! realm.write {
+                realm.add(item)
+            }
+            return item
+    }
+    
+    func delete() {
+        guard let realm = realm else { return }
+        try! realm.write {
+            realm.delete(self)
+        }
     }
 }
 

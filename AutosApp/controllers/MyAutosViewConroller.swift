@@ -60,6 +60,8 @@ class MyAutosViewController: UIViewController {
             dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
         } else if let dest = segue.destination as? ChangePasswordViewController {
             dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
+        } else if let dest = segue.destination as? SellMyAutosViewController {
+            dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
         }
     }
     
