@@ -17,22 +17,22 @@ import RealmSwift
     
     dynamic var id = UUID().uuidString
     
-    dynamic var uid: String = ""
-    dynamic var saleStatus = SaleStatus.DRAFT
+    dynamic var uid = ""
+    dynamic var saleStatus = ""
     
-    dynamic var type = VehicleType.SEDAN
-    dynamic var status = VehicleStatus.USED
+    dynamic var type = ""
+    dynamic var status = ""
     dynamic var maker = ""
     dynamic var model = ""
     dynamic var year = 2019
     dynamic var price = 0.0
     dynamic var kilometers = 0
     
-    dynamic var drive = Drive.FWD
-    dynamic var transmission = Transmission.AUTOMATIC
-    dynamic var exteriorColor = Colors.OTHER
-    dynamic var fuelType = FuelType.OTHER
-    dynamic var numberOfDoors = Doors.Dx
+    dynamic var drive = ""
+    dynamic var transmission = ""
+    dynamic var exteriorColor = ""
+    dynamic var fuelType = ""
+    dynamic var numberOfDoors = ""
     
     dynamic var phone = ""
     dynamic var email = ""
@@ -60,19 +60,19 @@ import RealmSwift
         self.uid = uid
         self.saleStatus = saleStatus
         
-        self.type = VehicleType.init(rawValue: type)!
-        self.status = VehicleStatus.init(rawValue: status)!
+        self.type = type
+        self.status = status
         self.maker = maker
         self.model = model
         self.year = year
         self.price = price
         
         self.kilometers = kilometers
-        self.drive = Drive.init(rawValue: drive)!
-        self.transmission = Transmission.init(rawValue: transmission)!
-        self.exteriorColor = Colors.init(rawValue: color)!
-        self.fuelType = FuelType.init(rawValue: fuelType)!
-        self.numberOfDoors = Doors.init(rawValue: doors)!
+        self.drive = drive
+        self.transmission = transmission
+        self.exteriorColor = color
+        self.fuelType = fuelType
+        self.numberOfDoors = doors
         
         self.phone = phone
         self.email = email
@@ -89,7 +89,7 @@ import RealmSwift
 extension Vehicle {
     static func all(in realm: Realm = try! Realm()) -> Results<Vehicle> {
         return realm.objects(Vehicle.self)
-            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue)
+            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
     }
     
     static func myAutos(uid: String, in realm: Realm = try! Realm()) -> Results<Vehicle> {
@@ -100,10 +100,66 @@ extension Vehicle {
     }
     
     static func search(make: String, model: String, in realm: Realm = try! Realm()) -> Results<Vehicle> {
-        let predicate = NSPredicate(format: "make == %@ and model == %@", make, model)
+        let predicate = NSPredicate(format: "maker == %@ and model == %@", make, model)
         return realm.objects(Vehicle.self)
             .filter(predicate)
-            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue)
+            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+    }
+    
+    static func search(make: String?, model: String?,
+                       vehicleStatus: VehicleStatus?, vehicleType: VehicleType?, minYear: Int?, maxPrice: Double?,
+                       transmission: Transmission?, color: Colors?, maxKilometers: Int?, fuelType: FuelType?,
+                       in realm: Realm = try! Realm()) -> Results<Vehicle> {
+        var condition = ""
+        
+        if make != nil {
+            condition = query(org: condition, add: " maker == '\(make!)'")
+        }
+        if model != nil {
+            condition = query(org: condition, add: " model == '\(model!)'")
+        }
+        if vehicleStatus != nil {
+            condition = query(org: condition, add: " status == '\(vehicleStatus!.rawValue)'")
+        }
+        if vehicleType != nil {
+            condition = query(org: condition, add: " type == '\(vehicleType!.rawValue)'")
+        }
+        if minYear != nil {
+            condition = query(org: condition, add: " year >= \(minYear!)")
+        }
+        if maxPrice != nil {
+            condition = query(org: condition, add: " price <= \(maxPrice!)")
+        }
+        if transmission != nil {
+            condition = query(org: condition, add: " transmission == '\(transmission!.rawValue)'")
+        }
+        if color != nil {
+            condition = query(org: condition, add: " exteriorColor == '\(color!.rawValue)'")
+        }
+        if maxKilometers != nil {
+            condition = query(org: condition, add: " kilometers <= \(maxKilometers!)")
+        }
+        if fuelType != nil {
+            condition = query(org: condition, add: " fuelType == '\(fuelType!.rawValue)'")
+        }
+        
+        if condition.count == 0 {
+            return realm.objects(Vehicle.self)
+                .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+        } else {
+            return realm.objects(Vehicle.self)
+                .filter(condition)
+                .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+        }
+
+    }
+    
+    static func query(org: String, add: String) -> String {
+        var query = org
+        if query.count > 0 {
+            query = query + " and"
+        }
+        return query + " " + add
     }
     
     @discardableResult

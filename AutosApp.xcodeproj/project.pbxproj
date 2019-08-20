@@ -57,6 +57,7 @@
 		9D248246230B66760029044D /* Kia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248226230B66760029044D /* Kia.jpg */; };
 		9D248247230B66760029044D /* Mitsubishi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D248227230B66760029044D /* Mitsubishi.jpg */; };
 		9D248249230B7A580029044D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D248248230B7A580029044D /* Double.swift */; };
+		9D24824B230B97930029044D /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24824A230B97930029044D /* SearchResultViewController.swift */; };
 		9D3CED8023076AF60093502B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CED7F23076AF60093502B /* Key.swift */; };
 		9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D458D222302356F003AA632 /* MyAutosViewConroller.swift */; };
 		9D458D25230237BB003AA632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D458D24230237BB003AA632 /* GoogleService-Info.plist */; };
@@ -143,6 +144,7 @@
 		9D248226230B66760029044D /* Kia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kia.jpg; sourceTree = "<group>"; };
 		9D248227230B66760029044D /* Mitsubishi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mitsubishi.jpg; sourceTree = "<group>"; };
 		9D248248230B7A580029044D /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		9D24824A230B97930029044D /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9D3CED7F23076AF60093502B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		9D458D222302356F003AA632 /* MyAutosViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutosViewConroller.swift; sourceTree = "<group>"; };
 		9D458D24230237BB003AA632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				9D69DE08230859B7004620C3 /* ChangePasswordViewController.swift */,
 				9D2482032309DEB20029044D /* PostViewController.swift */,
 				9D248205230B630E0029044D /* SellMyAutosViewController.swift */,
+				9D24824A230B97930029044D /* SearchResultViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				9D69DE122308E364004620C3 /* HomeViewController.swift in Sources */,
 				9D06A51F22E148CD00FBA6EC /* AutosApp.xcdatamodeld in Sources */,
 				9D69DE0D230890AD004620C3 /* VehicleMaker.swift in Sources */,
+				9D24824B230B97930029044D /* SearchResultViewController.swift in Sources */,
 				9DF802F122E926C800DEE2B2 /* User.swift in Sources */,
 				9DF802F322E9292900DEE2B2 /* UserInfo.swift in Sources */,
 				9D4B275422F3BD7F0091C068 /* RoundedCornerView.swift in Sources */,

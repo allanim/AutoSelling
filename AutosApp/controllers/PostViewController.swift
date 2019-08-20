@@ -35,9 +35,6 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     var makers = VehicleMaker.all().array().compactMap { $0.maker }
     var models: [String] = []
     
-    // autos
-    let autosRef = Database.database().reference(withPath: "autos")
-    
     let postToList = "PostToSellMyAutos"
     
     override func viewDidLoad() {

@@ -25,7 +25,18 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         txtModel.isEnabled = false
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? SearchResultViewController {
+            dest.sourceTabBarIndex = self.tabBarController?.selectedIndex
+            dest.isSimepleSearch = true
+            dest.make = txtMake.text
+            dest.model = txtModel.text
+        }
+    }
+    
     @IBAction func btnSearchClick(_ sender: TransitionButton) {
+        // move
+        self.performSegue(withIdentifier: "SearchResult", sender: nil)
     }
     
     //textFiled Delegate
