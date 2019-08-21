@@ -52,6 +52,8 @@ class AutoDetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? SearchResultViewController {
             dest.loadCache = true
+        } else if let dest = segue.destination as? AutoCommentsViewController {
+            dest.sourceVehicleId = sourceVehicleId
         }
     }
     

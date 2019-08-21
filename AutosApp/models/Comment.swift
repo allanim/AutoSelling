@@ -13,10 +13,35 @@ struct Comment {
     let ref: DatabaseReference?
     let key: String
     
-    var vehicleKey: String
-    var parentKey: String
-    
     var author: String
     var comment: String
-    var regDate: Date
+
+    init(author: String, comment: String, key: String = "") {
+        self.ref = nil
+        self.key = key
+        self.author = author
+        self.comment = comment
+    }
+    
+    init?(snapshot: DataSnapshot) {
+        
+        guard
+            let value = snapshot.value as? [String: AnyObject],
+            let author = value["author"] as? String,
+            let comment = value["comment"] as? String else {
+                return nil
+        }
+        
+        self.ref = snapshot.ref
+        self.key = snapshot.key
+        self.author = author
+        self.comment = comment
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "author": author,
+            "comment": comment
+        ]
+    }
 }

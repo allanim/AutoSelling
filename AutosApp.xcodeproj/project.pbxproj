@@ -79,6 +79,8 @@
 		9DB7194122FCF67000C2F6C8 /* my-saved-autos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193D22FCF66F00C2F6C8 /* my-saved-autos.png */; };
 		9DB7194222FCF67000C2F6C8 /* edit-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7193E22FCF67000C2F6C8 /* edit-profile.png */; };
 		9DDC8890230CC409003BEC2F /* AutoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC888F230CC409003BEC2F /* AutoDetailsViewController.swift */; };
+		9DDC8892230DAF83003BEC2F /* AutoCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC8891230DAF83003BEC2F /* AutoCommentsViewController.swift */; };
+		9DDC8894230DB533003BEC2F /* AddCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC8893230DB533003BEC2F /* AddCommentViewController.swift */; };
 		9DEB3ACE22F109CF00B3ED72 /* car-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB3ACB22F109CF00B3ED72 /* car-32.png */; };
 		9DEB3ACF22F109CF00B3ED72 /* search-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB3ACC22F109CF00B3ED72 /* search-32.png */; };
 		9DEB3AD022F109CF00B3ED72 /* info-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB3ACD22F109CF00B3ED72 /* info-32.png */; };
@@ -167,6 +169,8 @@
 		9DB7193D22FCF66F00C2F6C8 /* my-saved-autos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-saved-autos.png"; sourceTree = "<group>"; };
 		9DB7193E22FCF67000C2F6C8 /* edit-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-profile.png"; sourceTree = "<group>"; };
 		9DDC888F230CC409003BEC2F /* AutoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDetailsViewController.swift; sourceTree = "<group>"; };
+		9DDC8891230DAF83003BEC2F /* AutoCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCommentsViewController.swift; sourceTree = "<group>"; };
+		9DDC8893230DB533003BEC2F /* AddCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentViewController.swift; sourceTree = "<group>"; };
 		9DEB3ACB22F109CF00B3ED72 /* car-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-32.png"; sourceTree = "<group>"; };
 		9DEB3ACC22F109CF00B3ED72 /* search-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-32.png"; sourceTree = "<group>"; };
 		9DEB3ACD22F109CF00B3ED72 /* info-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-32.png"; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 				9D248205230B630E0029044D /* SellMyAutosViewController.swift */,
 				9D24824A230B97930029044D /* SearchResultViewController.swift */,
 				9DDC888F230CC409003BEC2F /* AutoDetailsViewController.swift */,
+				9DDC8891230DAF83003BEC2F /* AutoCommentsViewController.swift */,
+				9DDC8893230DB533003BEC2F /* AddCommentViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 			files = (
 				9D2482042309DEB20029044D /* PostViewController.swift in Sources */,
 				9DF802F722E9314400DEE2B2 /* Vehicle.swift in Sources */,
+				9DDC8892230DAF83003BEC2F /* AutoCommentsViewController.swift in Sources */,
 				9D458D232302356F003AA632 /* MyAutosViewConroller.swift in Sources */,
 				9D06A51922E148CD00FBA6EC /* ViewController.swift in Sources */,
 				9D248249230B7A580029044D /* Double.swift in Sources */,
@@ -564,6 +571,7 @@
 				9D69DE1423090CB0004620C3 /* Results.swift in Sources */,
 				9D69DE1023089443004620C3 /* VehicleUtils.swift in Sources */,
 				9D06A51722E148CD00FBA6EC /* AppDelegate.swift in Sources */,
+				9DDC8894230DB533003BEC2F /* AddCommentViewController.swift in Sources */,
 				9D89988722EBF8DC00F424BA /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
