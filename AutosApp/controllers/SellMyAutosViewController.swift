@@ -35,6 +35,9 @@ class SellMyAutosViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? UITabBarController, let index = self.sourceTabBarIndex {
             dest.selectedIndex = index
+        } else if let dest = segue.destination as? AutoDetailsViewController {
+            dest.sourceVehicleId = selectedVehicleId
+            dest.backView = "SellMyAutos"
         }
     }
     
@@ -82,7 +85,7 @@ extension SellMyAutosViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedVehicleId = myAutos[indexPath.row].id
-//        performSegue(withIdentifier: "showDetail", sender: self)
+        performSegue(withIdentifier: "showDetail", sender: self)
         
     }
     

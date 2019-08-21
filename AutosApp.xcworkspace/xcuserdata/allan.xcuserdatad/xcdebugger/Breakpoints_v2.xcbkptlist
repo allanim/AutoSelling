@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutosApp/models/Vehicle.swift"
-            timestampString = "588036598.994205"
+            timestampString = "588051112.100973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "search(make:model:vehicleStatus:vehicleType:minYear:maxPrice:transmission:color:maxKilometers:fuelType:in:)"
             landmarkType = "7">
          </BreakpointContent>

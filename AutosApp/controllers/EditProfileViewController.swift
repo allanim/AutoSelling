@@ -32,8 +32,7 @@ class EditProfileViewController: UIViewController {
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
                 // set user info
-                let userInfoRef = Database.database().reference(withPath: "user-info")
-                userInfoRef.child(user!.uid).observe(.value, with: { snapshot in
+                self.userInfoRef.child(user!.uid).observe(.value, with: { snapshot in
                     let userInfo = UserInfo(snapshot: snapshot);
                     self.txtEmail.text = userInfo!.email
                     self.txtFirstName.text = userInfo?.firstName

@@ -27,16 +27,46 @@ class SearchResultViewController: UIViewController {
     var color: Colors?
     var maxKilometers: Int?
     var fuelType: FuelType?
+    var loadCache = false
     
     // result
     var result: [Vehicle] = []
     var selectedVehicleId: String?
+    
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        
+        // loading cache
+        if (loadCache) {
+            isSimepleSearch = userDefault.bool(forKey: "isSimepleSearch")
+            make = userDefault.string(forKey: "make")
+            model = userDefault.string(forKey: "model")
+            if let value = userDefault.string(forKey: "vehicleStatus") {
+                vehicleStatus = VehicleStatus.init(rawValue: value)
+            }
+            if let value = userDefault.string(forKey: "vehicleType") {
+                vehicleType = VehicleType.init(rawValue: value)
+            }
+            minYear = userDefault.integer(forKey: "minYear")
+            maxPrice = userDefault.double(forKey: "maxPrice")
+            if let value = userDefault.string(forKey: "transmission") {
+                transmission = Transmission.init(rawValue: value)
+            }
+            if let value = userDefault.string(forKey: "color") {
+                color = Colors.init(rawValue: value)
+            }
+            maxKilometers = userDefault.integer(forKey: "maxKilometers")
+            if let value = userDefault.string(forKey: "fuelType") {
+                fuelType = FuelType.init(rawValue: value)
+            }
+        }
+        
         
         // get autos
         if (isSimepleSearch) {
@@ -48,11 +78,28 @@ class SearchResultViewController: UIViewController {
         }
         self.tableView.reloadData()
         
+        // save condition
+        userDefault.set(isSimepleSearch, forKey: "isSimepleSearch")
+        userDefault.set(make, forKey: "make")
+        userDefault.set(model, forKey: "model")
+        userDefault.set(vehicleStatus?.rawValue, forKey: "vehicleStatus")
+        userDefault.set(vehicleType?.rawValue, forKey: "vehicleType")
+        userDefault.set(minYear, forKey: "minYear")
+        userDefault.set(maxPrice, forKey: "maxPrice")
+        userDefault.set(transmission?.rawValue, forKey: "transmission")
+        userDefault.set(color?.rawValue, forKey: "color")
+        userDefault.set(maxKilometers, forKey: "maxKilometers")
+        userDefault.set(fuelType?.rawValue, forKey: "fuelType")
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? UITabBarController, let index = self.sourceTabBarIndex {
             dest.selectedIndex = index
+        } else if let dest = segue.destination as? AutoDetailsViewController {
+            dest.sourceVehicleId = selectedVehicleId
+            dest.backView = "SearchResult"
         }
     }
 }
@@ -100,7 +147,7 @@ extension SearchResultViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedVehicleId = result[indexPath.row].id
-        //        performSegue(withIdentifier: "showDetail", sender: self)
+        performSegue(withIdentifier: "showDetail", sender: self)
         
     }
     

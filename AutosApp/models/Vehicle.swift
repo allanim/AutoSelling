@@ -99,11 +99,20 @@ extension Vehicle {
             .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
     }
     
+    static func getAuto(id: String, in realm: Realm = try! Realm()) -> Vehicle? {
+        return realm.object(ofType: Vehicle.self, forPrimaryKey: id)
+    }
+    
     static func search(make: String, model: String, in realm: Realm = try! Realm()) -> Results<Vehicle> {
-        let predicate = NSPredicate(format: "maker == %@ and model == %@", make, model)
-        return realm.objects(Vehicle.self)
-            .filter(predicate)
-            .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+        if make == "" {
+            return realm.objects(Vehicle.self)
+                .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+        } else {
+            let predicate = NSPredicate(format: "maker == %@ and model == %@", make, model)
+            return realm.objects(Vehicle.self)
+                .filter(predicate)
+                .sorted(byKeyPath: Vehicle.Property.regDate.rawValue, ascending: false)
+        }
     }
     
     static func search(make: String?, model: String?,
