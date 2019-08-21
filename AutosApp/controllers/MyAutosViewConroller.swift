@@ -38,9 +38,10 @@ class MyAutosViewController: UIViewController {
                 // set user info
                 let userInfoRef = Database.database().reference(withPath: "user-info")
                 userInfoRef.child(user!.uid).observe(.value, with: { snapshot in
-                    let userInfo = UserInfo(snapshot: snapshot);
-                    self.lbUserName.text = "Hello " + userInfo!.fullName
-                    self.lbUserEmail.text = userInfo?.email
+                    if let userInfo = UserInfo(snapshot: snapshot) {
+                        self.lbUserName.text = "Hello " + userInfo.fullName
+                        self.lbUserEmail.text = userInfo.email
+                    }
                 })
             } else {
                 // do not have auth
